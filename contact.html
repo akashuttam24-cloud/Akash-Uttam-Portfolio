@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact & Profile – Akash Uttam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact information and brief introduction of Akash Uttam." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/theme.css" />
+  <script src="assets/theme.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .card {
+      padding: 30px 26px 24px;
+      display: grid;
+      gap: 18px;
+    }
+
+    @media (min-width: 720px) {
+      .card {
+        grid-template-columns: 1.3fr 1.2fr;
+      }
+    }
+
+    .info-label {
+      color: var(--text-soft);
+    }
+
+    .info-value {
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .contact-links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body data-theme="aurora">
+  <header class="top-nav">
+    <div class="brand">
+      <span>Akash</span> Uttam · Portfolio
+    </div>
+    <nav class="nav-links">
+      <a href="experience-portfolio.html" class="nav-link">Overview</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="academics.html" class="nav-link">Academics</a>
+      <a href="strengths.html" class="nav-link">Strengths</a>
+      <a href="preferred-areas.html" class="nav-link">Preferred Areas</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+  </header>
+
+  <div class="top-utilities">
+    <div class="theme-picker" role="toolbar" aria-label="Theme picker">
+      <button class="theme-button active" data-theme-choice="aurora">
+        <span class="theme-swatch"></span>
+        Aurora
+      </button>
+      <button class="theme-button" data-theme-choice="sunset">
+        <span class="theme-swatch"></span>
+        Sunset
+      </button>
+      <button class="theme-button" data-theme-choice="tide">
+        <span class="theme-swatch"></span>
+        Tide
+      </button>
+      <button class="theme-button" data-theme-choice="lilac">
+        <span class="theme-swatch"></span>
+        Lilac
+      </button>
+    </div>
+  </div>
+
+  <main class="page-wrapper">
+    <section class="card">
+      <div>
+        <h1 class="page-title">Contact Details</h1>
+        <p class="subtitle">You can reach me easily via phone or email for coordination-related communication.</p>
+
+        <div class="info-grid">
+          <div><span class="info-label">Name: </span><span class="info-value">Akash Uttam</span></div>
+          <div><span class="info-label">Course: </span><span class="info-value">Bachelor of Computer Applications (BCA)</span></div>
+          <div><span class="info-label">Year / Semester: </span><span class="info-value">3rd Year, VI Semester</span></div>
+          <div><span class="info-label">Role Applying For: </span><span class="info-value">Event Coordinator – Srijan Annual Fest</span></div>
+        </div>
+
+        <div class="contact-links">
+          <div><span class="info-label">Mobile: </span><span class="info-value">+91 93369 52695</span></div>
+          <div>
+            <span class="info-label">Email: </span>
+            <a href="mailto:akashuttam24@gmail.com">akashuttam24@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-box">
+        I, <strong>Akash Uttam</strong>, a BCA VI Semester student, am interested in contributing to our annual fest
+        <strong>Srijan</strong> as part of the coordination team. I bring a disciplined, responsible attitude and
+        prior event coordination experience, and I am eager to support the team in planning, organizing, and executing
+        events smoothly for our institute.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+

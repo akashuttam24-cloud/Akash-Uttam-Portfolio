@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experience Portfolio – Akash Uttam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Experience portfolio of Akash Uttam for Event Coordinator – Srijan Annual Fest." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/theme.css" />
+  <script src="assets/theme.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.15), transparent 55%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .card-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr 1.7fr;
+      gap: 32px;
+      padding: 32px;
+    }
+
+    @media (max-width: 820px) {
+      .card-inner {
+        grid-template-columns: 1fr;
+        padding: 24px 18px 20px;
+      }
+    }
+
+    .left-panel {
+      border-right: 1px solid var(--panel-border);
+      padding-right: 24px;
+    }
+
+    @media (max-width: 820px) {
+      .left-panel {
+        border-right: none;
+        border-bottom: 1px solid var(--panel-border);
+        padding: 0 0 18px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .badge-role {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 999px;
+      padding: 4px 12px;
+      border: 1px solid var(--badge-border);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--success);
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.3);
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      margin-bottom: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: var(--text-soft);
+      margin-bottom: 20px;
+    }
+
+    .meta {
+      display: grid;
+      gap: 6px;
+      font-size: 13px;
+      margin-bottom: 18px;
+      color: var(--text-soft);
+    }
+
+    .meta .value {
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .right-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .section-body {
+      font-size: 13px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    .subheading {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-soft);
+      margin-bottom: 6px;
+    }
+
+    .footer-note {
+      margin-top: 6px;
+      font-size: 12px;
+      color: var(--text-soft);
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body data-theme="aurora">
+  <header class="top-nav">
+    <div class="brand">
+      <span>Akash</span> Uttam · Portfolio
+    </div>
+    <nav class="nav-links">
+      <a href="experience-portfolio.html" class="nav-link active">Overview</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="academics.html" class="nav-link">Academics</a>
+      <a href="strengths.html" class="nav-link">Strengths</a>
+      <a href="preferred-areas.html" class="nav-link">Preferred Areas</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <div class="top-utilities">
+    <div class="theme-picker" role="toolbar" aria-label="Theme picker">
+      <button class="theme-button active" data-theme-choice="aurora">
+        <span class="theme-swatch"></span>
+        Aurora
+      </button>
+      <button class="theme-button" data-theme-choice="sunset">
+        <span class="theme-swatch"></span>
+        Sunset
+      </button>
+      <button class="theme-button" data-theme-choice="tide">
+        <span class="theme-swatch"></span>
+        Tide
+      </button>
+      <button class="theme-button" data-theme-choice="lilac">
+        <span class="theme-swatch"></span>
+        Lilac
+      </button>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="card">
+      <div class="card-inner">
+        <!-- Left Column -->
+        <section class="left-panel">
+          <div
+            class="profile-photo"
+            style="background-image: url('C:/Users/akash/Downloads/portfolio image.jpg');"
+            aria-label="Portrait of Akash Uttam"
+          ></div>
+
+          <div class="badge-role">
+            <span class="badge-dot"></span>
+            Event Coordinator – Srijan Annual Fest
+          </div>
+
+          <h1 class="name">
+            Akash Uttam
+          </h1>
+          <p class="tagline">
+            BCA – 3rd Year, VI Semester · Aspiring Event Coordinator focused on disciplined execution and team-first collaboration.
+          </p>
+
+          <div class="meta">
+            <div>
+              <span class="label">Course:</span>
+              <span class="value">Bachelor of Computer Applications (BCA)</span>
+            </div>
+            <div>
+              <span class="label">Year / Semester:</span>
+              <span class="value">3rd Year · VI Semester</span>
+            </div>
+            <div>
+              <span class="label">Role Applying For:</span>
+              <span class="value">Event Coordinator – Srijan Annual Fest</span>
+            </div>
+          </div>
+
+          <div class="contact">
+            <div><span class="label">Mobile: </span><span class="value">+91 93369 52695</span></div>
+            <div>
+              <span class="label">Email: </span>
+              <a href="mailto:akashuttam24@gmail.com">akashuttam24@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="pill-row">
+            <span class="pill highlight">Disciplined & Responsible</span>
+            <span class="pill">Team-Oriented</span>
+            <span class="pill">Event Management</span>
+            <span class="pill">Quick Learner</span>
+          </div>
+
+          <div class="intro-box">
+            <strong>Introduction</strong><br />
+            I, <strong>Akash Uttam</strong>, a BCA VI Semester student, am keen to contribute to our annual fest
+            <strong>Srijan</strong> as part of the coordination team. I bring a responsible attitude, strong commitment, and
+            hands-on experience in event support to ensure smooth planning and execution of this flagship event.
+          </div>
+        </section>
+
+        <!-- Right Column -->
+        <section class="right-panel">
+          <!-- Skill Set -->
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Skill Set</h2>
+              <span class="section-tag">Core strengths</span>
+            </div>
+            <div class="section-body">
+              <ul class="bullet-list">
+                <li>Good organizational and management capability with a structured approach to tasks.</li>
+                <li>Disciplined, reliable, and consistent in fulfilling assigned responsibilities.</li>
+                <li>Creative in planning and execution of events and activities.</li>
+                <li>Comfortable working within diverse teams and supporting overall coordination.</li>
+                <li>Quick learner with strong task-handling and adaptability.</li>
+                <li>Capable of making effective decisions under pressure and during live events.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Relevant Experience -->
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Relevant Experience</h2>
+              <span class="section-tag">On-ground</span>
+            </div>
+            <div class="section-body">
+              <p class="subheading">College & Community Involvement</p>
+              <ul class="bullet-list">
+                <li>Coordinated events at <strong>Oriental Institute of Technology, Bhopal</strong> across multiple domains, including Event Management, Volunteering, Stage Management, and Registration.</li>
+                <li>Active community member of <strong>TechHelp4U</strong>, contributing to event support and coordination activities.</li>
+                <li>Recognized and appreciated with a <strong>certificate of recognition</strong> for consistent involvement and contribution.</li>
+                <li>Experienced in managing workflow, handling responsibilities, and supporting team operations during events.</li>
+              </ul>
+              <div class="tag-grid">
+                <span class="tag primary">Event Management</span>
+                <span class="tag">Stage Management</span>
+                <span class="tag">Registration Desk</span>
+                <span class="tag">Volunteering</span>
+                <span class="tag">Community Events</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Academic / Project-Based Work -->
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Academic & Project-Based Work</h2>
+              <span class="section-tag">Structure</span>
+            </div>
+            <div class="section-body">
+              <ul class="bullet-list">
+                <li>Regularly engaged in academic projects, presentations, and college activities.</li>
+                <li>Experienced in preparing structured reports, documentation, and organized academic content.</li>
+                <li>Comfortable handling coordination tasks with a systematic and disciplined approach.</li>
+              </ul>
+              <p class="footer-note">
+                This academic exposure supports my ability to plan, document, and follow through on event-related activities.
+              </p>
+            </div>
+          </section>
+
+          <!-- Strengths & Motivation -->
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Strengths & Motivation</h2>
+              <span class="section-tag">Fit for role</span>
+            </div>
+            <div class="section-body">
+              <p class="subheading">Personal Strengths</p>
+              <ul class="bullet-list">
+                <li>Responsible and committed to the smooth execution of assigned duties.</li>
+                <li>Team-oriented mindset with strong collaboration and support skills.</li>
+                <li>Leadership potential with the ability to take initiative when required.</li>
+                <li>Good time management and practical problem-solving skills.</li>
+                <li>Confident in planning, execution, and follow-up of tasks.</li>
+              </ul>
+
+              <p class="subheading" style="margin-top: 10px;">Why I Want to Join the Coordination Team</p>
+              <p>
+                I wish to actively contribute to <strong>Srijan</strong> and apply my event management experience for the benefit of our institute.
+                With a sincere work ethic, a disciplined approach, and prior hands-on coordination exposure, I believe I can be a dependable
+                member of the coordination team.
+              </p>
+            </div>
+          </section>
+
+          <!-- Preferred Areas -->
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Preferred Areas of Responsibility</h2>
+              <span class="section-tag">Areas of focus</span>
+            </div>
+            <div class="section-body">
+              <div class="tag-grid">
+                <span class="tag primary">Stage Management</span>
+                <span class="tag primary">Registration</span>
+                <span class="tag">Event Management</span>
+                <span class="tag">Discipline Team</span>
+                <span class="tag">Volunteering</span>
+                <span class="tag">Technical / Support Team</span>
+              </div>
+              <p class="footer-note">
+                I am flexible and willing to support wherever required to ensure Srijan runs smoothly and successfully.
+              </p>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+
+
